@@ -9,8 +9,8 @@ import requests
 
 app = Flask(__name__)
 
-SPOTIPY_CLIENT_ID = 'your_spotify_client_id'
-SPOTIPY_CLIENT_SECRET = 'your_spotify_client_secret'
+SPOTIPY_CLIENT_ID = 'y5667bdb5cab941b79f74a6164dfb3b78'
+SPOTIPY_CLIENT_SECRET = '2d43e9a7a8b04f9e9375167283e503e9'
 SPOTIPY_REDIRECT_URI = 'http://localhost:5000/callback'
 
 APPLE_TEAM_ID = 'your_apple_team_id'
@@ -105,4 +105,4 @@ def callback():
     return jsonify(apple_music_playlist)
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=5001)
